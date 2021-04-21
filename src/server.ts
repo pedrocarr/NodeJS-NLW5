@@ -1,4 +1,4 @@
-import express from "express";
+import express, { response } from "express";
 
 const app = express();
 /**
@@ -8,6 +8,10 @@ const app = express();
  * PATCH = ALTERAR UMA INFORMAÇÃO
  * 
  */
+
+app.get("/", (request, response) => {
+  return response.send("Olá NLW05!!")
+})
 
 
 
