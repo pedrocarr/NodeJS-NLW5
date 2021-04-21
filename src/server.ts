@@ -4,6 +4,7 @@ const app = express();
 /**
  * GET = BUSCAS
  * POST = CRIAÇÃO
+ * PUT = ALTERAÇÃO
  * DELETE = DELETAR
  * PATCH = ALTERAR UMA INFORMAÇÃO
  * 
