@@ -1,0 +1,6 @@
+class Setting {
+
+
+}
+
+export { Setting }

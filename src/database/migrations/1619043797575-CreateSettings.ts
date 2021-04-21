@@ -1,6 +1,6 @@
 import {MigrationInterface, QueryRunner, Table} from "typeorm";
 
-export class CreateSettings1619039872853 implements MigrationInterface {
+export class CreateSettings1619043797575 implements MigrationInterface {
 
     public async up(queryRunner: QueryRunner): Promise<void> {
         await queryRunner.createTable(
@@ -14,29 +14,28 @@ export class CreateSettings1619039872853 implements MigrationInterface {
                     },
                     {
                         name: "username",
-                        type: "varchar",
+                        type: "varchar"
                     },
                     {
                         name: "chat",
                         type: "boolean",
-                        default: true,
+                        default: true
                     },
                     {
                         name: "updated_at",
                         type: "timestamp",
-                        default: "now()",
+                        default: "now()"
                     },
                     {
                         name: "created_at",
                         type: "timestamp",
-                        default: "now()",
+                        default: "now()"
                     },
                 ],
 
             })
         );
     }
-
 
     public async down(queryRunner: QueryRunner): Promise<void> {
         await queryRunner.dropTable("settings");
