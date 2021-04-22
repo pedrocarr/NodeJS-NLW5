@@ -24,7 +24,7 @@ routes.post("/settings", async  (request, response) => {
     username
   })
   await settingsRepository.save(settings);
-
+  return response.json(settings);
   
 })
 
