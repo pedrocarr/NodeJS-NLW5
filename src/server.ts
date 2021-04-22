@@ -2,6 +2,8 @@ import express, { response } from "express";
 import "./database";
 
 const app = express();
+
+app.listen(3333, () => console.log("Server is running on port 3333"));
 /**
  * GET = BUSCAS
  * POST = CRIAÇÃO
@@ -11,7 +13,7 @@ const app = express();
  * 
  */
 
-app.get("/", (request, response) => {
+/* app.get("/", (request, response) => {
   return response.json({
     message: "Hello NLW 05!",
   });
@@ -24,4 +26,6 @@ app.post("/", (request, response) => {
 });
 
 
-app.listen(3333, () => console.log("Server is running on port 3333"));
+
+
+*/
